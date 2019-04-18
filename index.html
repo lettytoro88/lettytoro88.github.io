@@ -5,49 +5,250 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-  <title>Project</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </head>
 
-<body>
+<nav class="navbar navbar-expand-lg ">
 
-  <div class="row">
-    <ul class="main-nav">
-      <li><a href="https://www.amazon.de">Home</a></li>
-      <li><a href="https://www.amazon.de/hz/contact-us?from=gp&*entries*=0&_encoding=UTF8&*Version*=1&">About us</a>
+  <a class="navbar-brand" style="color: #FEC107; font-weight: bold;" href="#">VOLARE</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" style="color:black;" href="http://127.0.0.1:5500/index.html">Home <span
+            class="sr-only">(current)</span></a>
       </li>
-      <li><a href="https://www.amazon.de">Gallery</a></li>
+      <li class="nav-item">
+        <a class="nav-link" style="color:black;" href="#">Calendar</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="color:black;" href="#" id="navbarDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About us
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">who we are</a>
+          <a class="dropdown-item" href="#"></a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" style="background-color:#FEC107; font-weight: bold;" href="#">Join us!</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" style="color:black;" href="#" tabindex="-1" aria-disabled="true">Gallery</a>
+      </li>
     </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button type="button" class="btn btn-warning">Search</button>
+    </form>
   </div>
-
-
-  <div class="parallax">
-
-    <h1>VOLARE</h1>
-    <P>Aerial acrobacies</P>
-    </p>
-
-
-  </div>
-  <div style="height:1000px;background-color:white;font-size:36px">
-    <div class="container">
-      <div class="row">
-        <div class="col"> <img
-            src="https://scontent.fdtm2-1.fna.fbcdn.net/v/t1.0-9/25289193_10158526445303504_3373088194616253668_n.jpg?_nc_cat=103&_nc_ht=scontent.fdtm2-1.fna&oh=1037a6f676c327c4b84dd17a1ce256a1&oe=5D3D14B0" alt="Woman hanging throug the arms from a red cloth between Trees">
-             </div>
-
-        <div class="col"> <img
-            src="https://scontent.fdtm2-1.fna.fbcdn.net/v/t1.0-9/21078325_10157725629698504_3905723840038575282_n.jpg?_nc_cat=107&_nc_ht=scontent.fdtm2-1.fna&oh=5d599c20f4e6de642dea6dd5a165d75a&oe=5D3C71CE"
-            alt="woman doing a handstand on a cave">
+</nav>
+<div class="bd-example">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://images.unsplash.com/photo-1545959570-a94084071b5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          class="d-block w-100" alt="..." style= width: 100px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Group dances</h5>
+          <p>Meet new people, make nes friends. Language is not a barrier for us.
+          </p>
+          <h5>DANCING NEED NO WORDS!</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://images.unsplash.com/photo-1508642207-7048c482ba7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>TRADITIONAL DANCES FROM ALL OVER THE WORLD</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://images.unsplash.com/photo-1511913411692-818ea059c8be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>STREET DANCES</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
         </div>
       </div>
     </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<hr>
+<div class=box>
 
-    <div class="parallax"></div>
+  <h1 style="text-align:center" ;>art is therapy, movement, integration...</h1>
 
+  <p style="text-align:center;"> In Munich, a city with more than one and a half million inhabitants, we promote the
+    integration of
+    the hundreds of
+    cultures that cohabit in it through dance
+  </p>
+
+  <h1 style="text-align:center;"> because music is an universal language </h1>
+</div>
+
+<hr>
+<article>
+
+  <div class="row">
+    <div class="col-sm-4">
+
+      <img
+        src="https://images.unsplash.com/photo-1554977931-e266ae4f624e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+        class="card-img-top" alt="acrobatic in Cafayate">
+      <div class="card-body">
+
+        <h5 class="card-title"> <b>Acrobatics outdoor</b></h5>
+        <p class="card-text" style="text-align: justify"> Every first and second weekend of the month, we meet in
+          different outdoor places around
+          Munich to practice some circus-acrobacies. Stay tuned to our Facebok site or check our calendar to could join
+          our dance sessions.</p>
+        <button type="button" class="btn btn-dark">Info</button>
+
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+
+      <img
+        src="https://images.unsplash.com/photo-1463592177119-bab2a00f3ccb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+        class="card-img-top" alt="Cataratas de Iguazú">
+      <div class="card-body">
+
+        <h5 class="card-title"><b>Oriental Dances</b></h5>
+        <p class="card-text" style="text-align: justify">Summer 2019 is the season of the oriental dances. We'll be
+          dancing from Belly-dance
+          through Dabke or Bollywood!!
+          Stay tuned to our Facebok site or check our calendar to could join our dance sessions.
+        </p>
+        <button type="button" class="btn btn-dark">Info</button>
+      </div>
+
+    </div>
+    <div class="col-sm-4">
+
+      <img
+        src="https://images.unsplash.com/photo-1454486837617-ce8e1ba5ebfe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+        class="card-img-top" alt="Yosemite Park">
+      <div class="card-body">
+
+        <h5 class="card-title"><b>Street Dances</b></h5>
+        <p class="card-text" style="text-align: justify"> Street dances are one of our favorites!! We meet every Friday
+          night to throw some steps
+          of Hip-hop, breakdance and Capoeira. Stay tuned to our Facebok site or check our calendar to could join our
+          dance sessions.</p>
+        <button type="button" class="btn btn-dark">Info</button>
+      </div>
+</article>
+<hr>
+<footer class="page-footer font-small stylish-color-dark pt-4">
+
+  <div class="container text-center text-md-left">
+    <div class="row">
+      <div class="col-md-4 mx-auto">
+
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Be part of the team!</h5>
+        <p>we love to welcome passionate people from all over the world!</p>
+      </div>
+      <div class="col-md-4 mx-auto">
+        <p style="">
+      </div>
+      <hr class="clearfix w-100 d-md-none">
+
+      <div class="col-md-2 mx-auto">
+
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a style="color: black;" href="#!">hello@volare.com</a>
+          </li>
+          <li>
+            <a style="color: black;" href="#!">+4917625137917</a>
+          </li>
+
+        </ul>
+      </div>
+
+
+
+    </div>
+
+
+
+    <ul class="list-unstyled list-inline text-center py-2">
+      <li class="list-inline-item">
+        <h5 class="mb-1">Register for free</h5>
+      </li>
+      <li class="list-inline-item">
+        <a style="color: #FEC107;" href="#!" class="btn btn-dark">Sign up!</a>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a class="btn-floating btn-fb mx-1">
+        <i class="fab fa-facebook-f"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-tw mx-1">
+        <i class="fab fa-twitter"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-gplus mx-1">
+        <i class="fab fa-google-plus-g"> </i>
+      </a>
+    </li>
+
+    </a>
+    </li>
+  </ul>
+
+  <div class="footer-copyright text-center py-3"> © 2019 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> ReDI School </a>
+  </div>
+
+
+</footer>
 
 
 </body>
+
+</html>
