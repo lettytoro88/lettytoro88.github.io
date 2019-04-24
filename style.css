@@ -1,10 +1,13 @@
 
+.box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+h1 {
+  font-family: 'Homemade Apple', cursive;
 .carousel-inner > .item {
   height: 100px;
 }
-.card-body {
-  background-color:lightgray;
-}
+
 .page-footer {
   background-color: #FEC107;}
- 
