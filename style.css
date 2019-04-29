@@ -5,9 +5,12 @@
 }
 h1 {
   font-family: 'Homemade Apple', cursive;
-.carousel-inner > .item {
+.carousel-inner > .item 
+{
   height: 100px;
+  float: center;
 }
 
 .page-footer {
-  background-color: #FEC107;}
+  background-color: #FEC107;
+}
